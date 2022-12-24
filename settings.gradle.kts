@@ -13,4 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "templateproject"
-include ':app'
+include (":app")
+

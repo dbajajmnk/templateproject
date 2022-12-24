@@ -11,6 +11,12 @@ object Libs
    const val ROOM_COMPILER="androidx.room:room-compiler:${Versions.ROOM}"
    const val ROOM_KTX="androidx.room:room-ktx:${Versions.ROOM}"
 
+   object Plugins {
+     const val ANDROID_APP= "com.android.application"
+     const val  KOTLIN_ANDROID= "org.jetbrains.kotlin.android"
+
+   }
+
    //Life Cycle
    const val VIEW_MODEL= "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFE_CYCLE}"
    const val LIVE_DATA="androidx.lifecycle:lifecycle-livedata-ktx:${Versions.LIFE_CYCLE}"

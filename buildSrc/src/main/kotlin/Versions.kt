@@ -12,14 +12,19 @@ object Versions {
     const val TIMBER_LIB = "5.0.1"
     const val FIREBASE_BOM="30.3.1"
 
+    const val APP_ID = "com.example.templateproject"
+    const val JVM_TARGET="1.8"
+
     //Testing
     const val JUNIT = "4.13.2"
     const val JUNIT_TEXT_EXT = "1.1.3"
     const val COMPILE_SDK = 31
-    const val MIN_Sdk = 21
+    const val MIN_SDK = 21
     const val TARGET_SDK = 32
     const val VERSION_CODE = 1
     const val VERSION_NAME = "1.0"
     const val ESPRESSO_CORE = "3.4.0"
+
+
 
 }

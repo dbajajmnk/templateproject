@@ -11,9 +11,12 @@ object Versions {
     const val KOIN = "3.2.0"
     const val TIMBER_LIB = "5.0.1"
     const val FIREBASE_BOM="30.3.1"
+    const val MULTI_DEX="2.0.1"
 
     const val APP_ID = "com.example.templateproject"
     const val JVM_TARGET="1.8"
+
+
 
     //Testing
     const val JUNIT = "4.13.2"

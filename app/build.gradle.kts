@@ -29,6 +29,9 @@ android {
     kotlinOptions {
         jvmTarget = Versions.JVM_TARGET
     }
+    buildFeatures {
+        dataBinding= true
+    }
 }
 
 dependencies {
@@ -39,4 +42,11 @@ dependencies {
     testImplementation(Libs.JUNIT_LIB)
     androidTestImplementation(Libs.JUNIT_EXT_LIB)
     androidTestImplementation (Libs.ESPRESSO_CORE)
+    //Multidex
+    implementation(Libs.MULTIDEX_LIB)
+    //Koin -- Dependency  Injection
+    // Koin Core features
+    implementation (Libs.KOIN_CORE)
+    implementation(Libs.KOIN_ANDROID)
+    implementation(Libs.COROUTINE_LIB)
 }

@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "templateproject"
+rootProject.name = "rms"
 include (":app")
 

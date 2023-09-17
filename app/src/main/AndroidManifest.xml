@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.templateproject">
+    package="com.hbeonlab.rms">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- <= 30 + Xiaomi/MIUI -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" /> <!-- >= API 31 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="com.hbeonlab.rms.app.MainApp"
         android:allowBackup="true"
-        android:name=".app.TemplateApp"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -13,16 +24,46 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Templateproject"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ui.HomeActivity"
-            android:exported="true">
+            android:name=".ui.BluetoothDevicesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_bluetooth_devices"
+            android:theme="@style/Theme.Templateproject">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.RmsMessageListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Templateproject">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.DashboardActvity"
+            android:exported="true"
+            android:theme="@style/Theme.Templateproject">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>

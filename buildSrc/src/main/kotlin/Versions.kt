@@ -13,7 +13,7 @@ object Versions {
     const val FIREBASE_BOM="30.3.1"
     const val MULTI_DEX="2.0.1"
 
-    const val APP_ID = "com.example.templateproject"
+    const val APP_ID = "com.hbeonlab.rms"
     const val JVM_TARGET="1.8"
 
 
@@ -21,7 +21,7 @@ object Versions {
     //Testing
     const val JUNIT = "4.13.2"
     const val JUNIT_TEXT_EXT = "1.1.3"
-    const val COMPILE_SDK = 31
+    const val COMPILE_SDK = 33
     const val MIN_SDK = 21
     const val TARGET_SDK = 32
     const val VERSION_CODE = 1
